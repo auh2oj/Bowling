@@ -170,9 +170,11 @@ class ProcessInput implements ScoreAdder {
 		int size = frames.size();
 		if (size < GAME_LENGTH) {
 			throw err("Too few frames. A game must have %d frames.", GAME_LENGTH);
+			//System.err.println(String.format("Too few frames. A game must have %d frames.", GAME_LENGTH));
 		}
 		if (size > GAME_LENGTH) {
 			throw err("Too many frames. A game must have %d frames.", GAME_LENGTH);
+			//System.err.println(String.format("Too many frames. A game must have %d frames.", GAME_LENGTH));
 		}
 	}
 
